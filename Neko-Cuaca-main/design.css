@@ -1,0 +1,314 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+  @keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateX(10);
+        -webkit-transform: translateX(10);
+        -moz-transform: translateX(10);
+        -ms-transform: translateX(10);
+        -o-transform: translateX(10);
+}
+    to {
+        opacity: 1;
+        transform: translateX(0);
+}
+  }
+
+  .header {
+    font-family: "Nanum Brush Script", serif;
+    font-size: 3em;
+    color: #340d3b;
+    margin-top: 2%;
+    margin-left: -60%;
+    animation: slidein 2s forwards;
+}
+
+  /* .header>h1 {
+    background: linear-gradient(90deg, #351a42, #aa8bc4);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */
+
+  @keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20);
+        -webkit-transform: translateX(-20);
+        -moz-transform: translateX(-20);
+        -ms-transform: translateX(-20);
+        -o-transform: translateX(-20);
+}
+  to {
+      opacity: 1;
+      transform: translateX(0); 
+    }
+  }
+
+.gif1 img {
+  width: 35%;
+  margin-left: 50%;
+  margin-top: -25%;
+  margin-bottom: 15rem;
+  transform: translateX(-100px); 
+  animation: slideIn 2s forwards;
+
+}
+
+.gif1:hover {
+  scale: 0.9;
+  transition: all 0.8s ease-in-out;
+}
+
+  @keyframes slideIn2 {
+    from {
+        opacity: 0;
+        transform: translateY(-20);
+}to{
+        opacity: 1;
+        transform: translatey(0);
+}
+    }
+
+
+.btn2>a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 600;
+  background: linear-gradient(to right, #d608ff, #a83eff,#cf87dd);
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 816;
+  color: white;
+  animation: slideIn2 15s forwards;
+  -webkit-animation: slideIn2 15s forwards;
+}
+
+.btn2 {
+  margin-left: -35%;
+  font-family: "Nunito", serif;
+}
+
+.btn2>a:hover {
+  color: #2b1430;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: linear-gradient(to right, #f1d7f6, #cda9ea, #debde5);
+  transition: all 0.5s ease-in-out;
+  
+}
+
+.search-box {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 200px;
+  border-width: 1px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #d608ff;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #cf87dd
+}
+
+.result-container {
+  margin-top: 20px;
+}
+
+#searchResult {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+#defaultWeather {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.weather-card {
+  border-radius: 10px;
+  padding: 15px;
+  width: 180px;
+  background: rgba(83, 58, 88, 0.484);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  text-align: left;
+}
+
+.weather-card:hover {
+  background: rgba(79, 28, 90, 0.8);
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.weather-card h3{
+  margin: 0;
+  font-family: "Nanum Brush Script", serif;
+  font-size: 50px;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+.weather-card p {
+  margin: 20px 0;
+  font-size: 20px;
+  font-family: "Ubuntu Mono", serif;
+  color: rgba(255, 250, 250, 0.884);
+  font-weight: 700
+}
+
+
+.footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #dfe6e9;
+}
+
+.footer>a {
+  text-decoration: none;
+}
+
+.container {
+  background: linear-gradient(to top , #d296e4,#ffffff);
+  padding-bottom: 5%;
+}
+
+.weather-image {
+  display: flex;
+  padding-left: 46%;
+  width: 80px;
+}
+/*! Responsive layar !*/
+
+@media screen and (max-width: 768px) {
+
+
+  @keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateX(10);
+        -webkit-transform: translateX(10);
+        -moz-transform: translateX(10);
+        -ms-transform: translateX(10);
+        -o-transform: translateX(10);
+}
+    to {
+        opacity: 1;
+        transform: translateX(0);
+}
+  }
+  .header>h1 {
+    margin-left: 35%;
+    font-size: 2em;
+    animation: slidein 3s forwards;
+    -webkit-animation: slidein 3s forwards;
+}
+
+  .paraf {
+    font-size: 1.5em;
+    margin-top: -70px;
+    margin-left: 40%;
+    max-width: 400px;
+    animation: slidein 5s forwards;
+    -webkit-animation: slidein 5s forwards;
+}
+
+  .btn2 {
+    margin-left: 2%;
+    margin-top: -10%;
+  }
+  
+  .gif1 img {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+
+  .search-box {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .search-box input {
+    width: 80%;
+    height: 4vh;
+  }
+
+  .search-box button {
+    width: 50%;
+    
+  }
+
+  .search-box button:hover {
+    background-color: #adccea;
+    width: 70%;
+  }
+
+  #defaultWeather {
+    flex-direction: column;
+  }
+
+  .weather-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .weather-card h3 {
+    font-size: 20px;
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1; 
+    }
+  }
+
+  .weather-image {
+    margin-left: -60px;
+    width: 40%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+}
+
+
+
+
+

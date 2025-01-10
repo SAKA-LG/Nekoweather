@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neko Cuaca</title>
+    <link rel="stylesheet" href="design.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Neko Cuaca</h1>
+        <p class="paraf">what's your weather today?</p>
+    </div>
+    <div class="btn2">
+        <a href="#">Joind</a>
+    </div>
+    <div class="gif1">
+        <img src="/picture/Weather.gif" alt="gif">
+    </div>
+
+    <div class="container">
+        
+        <div class="search-box">
+            <input type="text" id="city" placeholder="Nama Kota">
+            <button onclick="searchWeather()">
+                <img src="/picture/iconSearch.png" alt="search" style="width: 20px;">
+            </button>
+        </div>
+
+        
+        <div id="searchResult"></div>
+        <P><div id="weatherImage" class="weather-image"></div></P>
+
+        <div id="defaultWeather"></div>
+    <div class="footer">
+        © 2024 Neko Cuaca | API diperoleh dari <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+    </div>
+</div>
+    <script src="dom.js"></script>
+</body>
+</html>
