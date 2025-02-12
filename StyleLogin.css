@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/picture/sunset.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: fadein 5s ease-in-out;
+    -webkit-animation: fadein 5s ease-in-out;
+}
+
+.login-form {
+    position: relative;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    backdrop-filter:  blur(10px);
+    width: 300px;
+    padding-top: 80px;
+    padding-bottom: 10%;
+    z-index: 1;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #fff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+button {
+    width: 80%;
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #d608ff, #a83eff,#cf87dd);
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to right, #f3b9ff, #ddcbec,#f6c8ff);
+    color: black;
+    font-family: "Poppins", serif;
+    transition: all 0.5 ease-in-out;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #f44336;
+    background: black;
+    border-radius: 20px;
+}
+
+.regis {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.regis a {
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    .container{
+        margin-top: -30%;
+    }
+} 
+
